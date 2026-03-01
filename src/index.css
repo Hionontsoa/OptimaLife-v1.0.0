@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-brand-magenta: #FF007A;
+  --color-brand-purple: #7000FF;
+  --color-brand-cyan: #00D1FF;
+  --color-brand-dark: #2D005E;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 font-sans;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/80 backdrop-blur-md border border-white/20;
+  }
+
+  .bottom-nav-item {
+    @apply flex flex-col items-center justify-center flex-1 py-2 text-slate-400 transition-colors;
+  }
+
+  .bottom-nav-item.active {
+    @apply text-brand-purple;
+  }
+}
