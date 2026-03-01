@@ -77,7 +77,7 @@ export const BottomNav = ({ activeTab, setActiveTab }: { activeTab: string, setA
   ];
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 px-2 pb-safe pt-2 flex justify-around items-center z-50 overflow-x-auto">
+    <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 px-2 pb-3 pt-2 flex justify-around items-center z-50 overflow-x-auto">
       {tabs.map((tab) => (
         <button
           key={tab.id}
