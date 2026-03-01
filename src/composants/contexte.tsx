@@ -39,7 +39,7 @@ interface CurrencyProviderProps {
 
 export const CurrencyProvider: React.FC<CurrencyProviderProps> = ({ 
   children, 
-  initialCurrency = '€' 
+  initialCurrency = 'Ar' 
 }) => {
   const [currency, setCurrency] = React.useState(initialCurrency);
 

@@ -113,7 +113,7 @@ function AppContent() {
  */
 export default function App() {
   const [currency] = useState(
-    getStorageData<string>(StorageKeys.CURRENCY, '€')
+    getStorageData<string>(StorageKeys.CURRENCY, 'Ar')
   );
 
   return (

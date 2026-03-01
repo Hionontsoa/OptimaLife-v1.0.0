@@ -129,7 +129,7 @@ export const initializeUserData = () => {
   }
   // Devise par défaut
   if (!localStorage.getItem(StorageKeys.CURRENCY)) {
-    setStorageData(StorageKeys.CURRENCY, '€');
+    setStorageData(StorageKeys.CURRENCY, 'Ar');
   }
 };
 
